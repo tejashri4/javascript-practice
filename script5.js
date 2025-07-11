@@ -65,4 +65,35 @@ for(let h=1; h<= 100 ; h ++)
     }
 }
  
-//8.
+//8.Calculate sum of first 100 numbers.
+let sum=0;
+for(let i = 1 ;i <= 100 ; i ++)
+{
+    sum+=i;
+}
+console.log("Sum = " + sum);
+
+//9.Count how may number are divisible by 3 (from 1 to 50)
+let count = 0;
+for(let i = 1; i <= 50 ; i++)
+{
+    if(i % 3 === 0)
+    {
+        count++;
+    }
+    
+}
+
+console.log("Count = " + count);
+
+//10.Print pattern  with stars(*)
+ for(let i = 1; i <= 5; i ++)
+ {
+    let row = " ";
+    for(let j = 1 ; j <= i ; j ++ )
+    {
+        row +="*";
+    }
+
+    console.log(row);
+ }
