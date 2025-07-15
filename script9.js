@@ -32,3 +32,61 @@ switch(day)
     default :
         console.log("Other day");
 }
+
+//Check number is positive or negative
+
+let input = prompt("Enter a number : ");
+if(input > 0)
+{
+    console.log(input + " Number is Positive");
+}
+ else if(input < 0 )
+ {
+    console.log(input + "Number is Negative");
+ }
+ else {
+    console.log(input + " Number is Zero");
+ }
+//Check if number is even or odd
+
+let num = prompt("Enter a Number : ");
+if(num % 2 === 0 )
+{
+    console.log(num + "Number is Even ");
+}
+else{
+    console.log(num + "Number is Odd ");
+}
+//Grade checker using marks
+
+let marks = prompt("Enter a Marks ");
+if(marks >= 90 )
+{
+    console.log("Grade A ");
+}else if(marks >= 75 )
+{
+    console.log("Grade B ");
+}else if (marks >= 60 )
+{
+    console.log("Grade C");
+}else{
+    console.log("Fail");
+}
+
+//Switch with user input(promt)
+let choice = prompt("Enter number 1 , 2, 3 : ");
+switch(choice)
+{
+    case 1:
+        console.log("You choice 1 ");
+        break;
+    case 2 :
+        console.log("You choice 2 ");
+        break ; 
+    case 3:
+        console.log("You can choice 3");
+        break;
+
+    default:
+    console.log("Invalid choice");
+}
