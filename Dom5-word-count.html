@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <textare id="text" oninput="countWords()"></textare>
+        <p>Word count: <span id="count">0</span></p>
+
+        <script>
+            function countWords()
+            {
+                let text = document.getElementById("text").value;
+                let words = text.trim().split(/\s+/);
+                document.getElementById("count").innerText = text.trim() === "" ? 0: words.length;
+            }
+        </script>
+
+
+    </body>
+</html>
