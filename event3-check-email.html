@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="email" placeholder="Enter email">
+        <button onclick="checkEmail()">Check Email</button>
+
+        <script>
+            function checkEmail()
+            {
+                let email = document.getElementById("email").value;
+                if(email.includes("@") && email.includes("."))
+            {
+                alert("Valid Email !");
+            } 
+            else{
+                alert("Invalid Email. Please try again.");
+            }
+            }
+        </script>
+    </body>
+</html>
