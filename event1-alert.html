@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form onsubmit="return validateForm()">
+      Name: <input type="text" id="name"><br><br>
+      Age: <input type="number" id="age"><br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        if (name === "" || age === "") {
+          alert("Please fill all fields");
+          return false;
+        } else {
+          alert("Form Submitted!");
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>
