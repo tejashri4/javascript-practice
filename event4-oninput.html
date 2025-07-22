@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" oninput="updateMessage(this.value)">
+        <p id="message"></p>
+
+        <script>
+            function updateMessage(value)
+            {
+                document.getElementById("message").innerText = "You typed: " + value;
+            }
+        </script>
+    </body>
+</html>
+
