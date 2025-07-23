@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Name List</h2>
+        <ul id="nameList"></ul>
+
+        <script>
+            let names = ["Teju" ,"Array","Riya","Kunal"];
+            let output = "";
+
+            for(let i = 0; i < names.length; i++)
+        {
+            output += "<li>" + names[i] + "</i>";
+        }
+
+        document.getElementById("nameList").innerHTML = output;
+        </script>
+    </body>
+</html>
