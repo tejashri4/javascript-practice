@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Numbers Table</h2>
+        <table border="1" id="numberTable"></table>
+
+        <script>
+            let numbers=[10,20,30,40,50];
+            let rows =" ";
+
+            for(let i=0;i < numbers.length ; i++ )
+        {
+            rows += "<tr><td>" + numbers[i] +"</td><tr>";
+        }
+
+        document.getElementById("numberTable").innerHTML = rows;
+        </script>
+    </body>
+</html>
