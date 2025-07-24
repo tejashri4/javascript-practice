@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Items with Index</h2>
+        <ul id="indexList"></ul>
+
+        <script>
+            let fruits = ["Apple","Banana","Mango", "Grapes"];
+            let list = "";
+
+            for(let i = 0 ; i < fruits.length ; i++ )
+        {
+            list +="<li>Index" + i + ":" + fruits[i] + "</li>" ;
+        }
+
+        document.getElementById("indexList").innerHTML = list ;
+        </script>
+    </body>
+</html>
