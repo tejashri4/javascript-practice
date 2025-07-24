@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Student Scores</h2>
+        <table border="1" id="scoreTable">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </table>
+
+        <script>
+            let students=["Tejuu","Rohan","Simran","Dev"];
+            let scores = [95,88,76,90];
+
+
+            for(let i = 0 ; i < students.length ; i++)
+        {
+            document.getElementById("scoreTable").innerHTML += 
+            "<tr><td>" + students[i] + "</tr></td>" + scores[i] + "</td></tr>";
+            
+        }
+        </script>
+    </body>
+</html>
